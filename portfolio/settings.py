@@ -90,15 +90,13 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 # DATABASE_URL=postgres://{user}:{password}@{hostname}:{port}/{database-name}
 #postgres://:@:5432/
 
-# postgres://:@:5432/
-
 DATABASES = {
 'default': {
 'ENGINE': 'django.db.backends.postgresql_psycopg2',
-'NAME': os.environ.get('DB_NAME', 'd14riknq1lp42f'),
-'USER': os.environ.get('DB_USER', 'yyfdfiltrswgyv'),
-'HOST': os.environ.get('DB_HOST', 'ec2-18-209-153-180.compute-1.amazonaws.com'),
-'PASSWORD': os.environ.get('DB_PASSWORD', '80d3f9fb2740b2d55834eaa898b6c44796a832777201ba3fd1fca059a067d610'),
+'USER': os.environ.get('DB_USER', 'dslozeortoxnjo'),
+'PASSWORD': os.environ.get('DB_PASSWORD', 'd680882ecd59e68a3ebc51d383410586d16abb6c32ed8c883434b57e028ad62e'),
+'HOST': os.environ.get('DB_HOST', 'ec2-34-228-154-153.compute-1.amazonaws.comm'),
+'NAME': os.environ.get('DB_NAME', 'd9aoqv48acnr7b'),
 'PORT': os.environ.get('DB_PORT', '5432')
     }
 }
