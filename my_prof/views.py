@@ -22,7 +22,7 @@ def upload(request):
         form = ProfileForm(request.POST, request.FILES)
         pictures = PicturesForm(request.POST, request.FILES)
 
-        if (form.is_valid(), pictures.is_valid()):
+        if form.is_valid():
             article = form.save(commit=False)
             article.save()
 
