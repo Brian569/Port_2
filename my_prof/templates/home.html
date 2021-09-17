@@ -2,7 +2,9 @@
 {% load bootstrap4 %}
 
 
+
 {% block content %}
+
 
 <div class="container-fluid">
   {% include 'navbar.html' %}
@@ -79,115 +81,87 @@
       <!-- end obout -->
 
   <!-- projects -->
-
-  <div class="logo" id="projects">
-    <h2 style="font-family: cursive;" class="text-center">Some Apps I have built.... </h2>
-   
-    <br><br>
-    <div class="row">
-        
-        <div class="col-md-6">
-            <img src="https://raw.githubusercontent.com/Owiti-Charles/Delani-Studio/master/images/delanihome.png" alt="project image">
-        </div>
-
-        <div class="col-md-6 news">
-            <h4>Delani App</h4>
-            <p>Project 1</p>
-            
-            <br><br>
-            <div class="about_project">
-               <p>Delani studio app is studi website that tells clients what they are abot, services they provide, and hw t get intouch with them.</p>           </div>
-            <br><br> 
-            <div class="git">
-                <a  href="https://github.com/Brayoh-ux/Deleani-studio-Brian"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
-                    <a href="https://deleani-studio.vercel.app/"><span class="material-icons">
-                        open_in_new
-                        </span></a>
+  <div class="projects" id="projects">
+      <div class="logo">
+        <h2 class="text-center">My Work</h2>
+      </div>
+      <p>Below are some of the applications I have built.</p>
+      <br><br>
+      <div class="flex">
+          <div class="box">
+            <div class="imgBox">
+                <img src="https://raw.githubusercontent.com/Owiti-Charles/Delani-Studio/master/images/delanihome.png" alt="">
             </div>
-            
-          
-                      
-        </div>
-    </div>
-    <br><br><br>   
-    <div class="dashed-border">
-     
-    </div>
-    <!-- two -->
-
-    <br><br>
-    <div class="row">
-        
-        <div class="col-md-6">
-            <img src="https://i.ytimg.com/vi/txpDam9VUZM/maxresdefault.jpg" alt="project image">
-        </div>
-       
-        
-        <div class="col-md-6 news">
-            <h4>Go_News-App</h4>
-            <p>Project 2</p>
-            
-            <br><br>
-            <div class="about_project">
-                <p>Go News App is a web application that displays a list of various news sources, top headlines on the landing page and world leading news caster BBC. Clicking a news article will redirect the user to read it fully from the news source. It achieves this by using the News API.</p>
-                
+            <div class="details">
+                <div class="content">
+                    <h2>Delani Studios</h2>
+                    <p>Delani studio app is a studio website that tells clients what they are about, services they provide, and how to get in touch with them.</p>
+                    <div class="">
+                        <div class="git">
+                                <a href="https://deleani-studio.vercel.app/"><span class="material-icons">
+                                    open_in_new
+                                    </span></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <br><br> 
-            <div class="git">
-                <a  href="https://github.com/Brayoh-ux/Go_News-App"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
-                    <a href="https://gonewsapp.herokuapp.com/"><span class="material-icons">
-                        open_in_new
-                        </span></a>
+          </div>
+          <div class="box">
+            <div class="imgBox">
+                <img src="https://i.ytimg.com/vi/txpDam9VUZM/maxresdefault.jpg" alt="">
             </div>
-            
-          
-                      
-        </div>
-    </div>
-    <br><br><br>   
-    <div class="dashed-border">
-    </div>
-    <!-- three -->
-
-    <br><br>
-    <div class="row">
-        
-        <div class="col-md-6">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZSCDfkMybVagBkfUGgUs9wBGrvt_-6LdFQg&usqp=CAU " alt="project image">
-        </div>
-
-        <div class="col-md-6 news">
-            <h4>Brayoh Pizza Palace</h4>
-            <p>Project 4</p>
-            
-            <br><br>
-            <div class="about_project">
-               <p>A simple app made with HTML, CSS and JAVASCRIPT. Pizza ordering application that lets you select the size, toppings, crusts on pizzas and say how you want it delivered. </p>
+            <div class="details">
+                <div class="content">
+                    <h2>Go News</h2>
+                    <p>Go News App is a web application that displays a list of various news sources, top headlines and world leading news caster BBC.Created using news API</p>
+                    <div class="">
+                        <div class="git">
+                                <a href="https://gonewsapp.herokuapp.com/"><span class="material-icons">
+                                    open_in_new
+                                    </span></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <br><br> 
-            <div class="git">
-                <a  href="https://github.com/Brayoh-ux/pizza-palace"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
-                    <a href="https://brayoh-ux.github.io/pizza-palace/"><span class="material-icons">
-                        open_in_new
-                        </span></a>
+          </div>
+          <div class="box">
+            <div class="imgBox">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZSCDfkMybVagBkfUGgUs9wBGrvt_-6LdFQg&usqp=CAU " alt="">
             </div>
-            
-          
-                      
-        </div>
-    </div>
-    <br><br><br>   
-    <div class="dashed-border">
-     
-    </div>
-
-    <!-- <div class="more"> -->
-        <!-- <button class="span text-center" type="button"><span></span> <a href="{% url 'more' %}">MORE....</a></button> -->
-    <!-- </div> -->
-    <!-- four -->
-
-    
-
+            <div class="details">
+                <div class="content">
+                    <h2>Brayoh Pizza Palace</h2>
+                    <p>A simple app made with HTML, CSS and JAVASCRIPT. Pizza ordering application that lets you select the size, toppings, crusts on pizzas and say how you want it delivered. </p>
+                    <div class="">
+                        <div class="git">
+                                <a href="https://brayoh-ux.github.io/pizza-palace/"><span class="material-icons">
+                                    open_in_new
+                                    </span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="imgBox">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCieBcfsXCv3Cm2Yu-0Drd1OmOmj6gt_7gXQ&usqp=CAU" alt="">
+            </div>
+            <div class="details">
+                <div class="content">
+                    <h2>Awards</h2>
+                    <p>This is a web application that allows different developers to post their projects and peers can review the same by grading the projects in terms of userbility, design and content. </p>
+                    <div class="">
+                        <div class="git">
+                                <a href="https://review-apk.herokuapp.com/"><span class="material-icons">
+                                    open_in_new
+                                    </span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+         
+      </div>
   </div>
   <!-- end projects -->
 
@@ -258,9 +232,7 @@
      border: 3px dashed #1A85FD;
 }
     .git a{
-        height: 20vmin;
         color: rgb(93, 225, 137);
-        margin-right: 5vmin;
     }
 
     .best p a{
@@ -285,18 +257,8 @@
         color: rgb(163, 158, 158);
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
-    #projects img{
-        height: 50vh;
-        width: 100%;
-        opacity: .80;
-        border-radius: 8px;
-    }
-   img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-}
+   
+
 
 .hexagon-gallery {
   margin: auto;
@@ -326,8 +288,6 @@
   position: relative; */
   width: 320px;
   height:345px;
-  /* background-color: #424242; */
-  /* -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); */
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 
@@ -355,10 +315,73 @@
 .more a{
     text-decoration: none;
     color: white;
-    /* padding: 12vmin; */
+  
     padding-top: 6vmin;
     font-family: cursive;
 
+}
+
+/* "pprojects" */
+
+.flex{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ h2{
+   font-weight: 700;
+    font-family: Poppins;
+}
+
+.projects .box{
+    position: relative;
+    background: rgb(5, 5, 1);
+    width: 400px;
+    height: auto;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.projects .box .imgBox{
+    position: relative;
+    overflow: hidden;
+}
+
+.projects .box .imgBox img{
+    width: 100%;
+    transition: transform 2s ease;
+}
+.projects .box:hover .imgBox img{
+    transform: scale(1.2);
+    opacity: .4;
+    
+}
+.projects .box .details{
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    position: absolute;
+    color: #fff;
+    text-align: left;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.projects .box:hover .details{
+    transform: scaleY(1);
+}
+
+.details h2{
+    text-align: center;
+    color: rgb(90, 220, 90);
+}
+.projects .box .details .content{
+    padding-top: 10px;
+    transform: transalate Y(-50%);
+    
 }
 
 </style>
