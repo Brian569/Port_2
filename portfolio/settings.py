@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = 'django-insecure-h&^%(+68if-6g$04tciztdhh1^av9bcx_n_l$23!!85ed^51*v'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -94,10 +94,10 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 DATABASES = {
 'default': {
 'ENGINE': 'django.db.backends.postgresql_psycopg2',
-'NAME': os.environ.get('DB_NAME'),
-'USER': os.environ.get('DB_USER'),
-'HOST': os.environ.get('DB_HOST' ),
-'PASSWORD': os.environ.get('DB_PASSWORD'),
+'NAME': os.environ.get('DB_NAME', 'd4j03rbghlhjd3'),
+'USER': os.environ.get('DB_USER', 'youwmydkdagrdu'),
+'HOST': os.environ.get('DB_HOST', 'ec2-52-45-238-24.compute-1.amazonaws.com'),
+'PASSWORD': os.environ.get('DB_PASSWORD', '5823f5a0e73e264ba6f09b73a7767df51027e81735f173d4b16aa128a8b0dcf6'),
 'PORT': os.environ.get('DB_PORT', '5432')
     }
 }
@@ -147,7 +147,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 cloudinary.config( 
-  cloud_name = os.environ.get('CLOUDINARY_CLOUD_NAME'), 
-  api_key = os.environ.get('CLOUD_API_KEY'), 
-  api_secret = os.environ.get('CLOUD_API_SECRET') 
+  cloud_name = os.environ.get('CLOUDINARY_CLOUD_NAME', 'dwa7xqgkn'), 
+  api_key = os.environ.get('CLOUD_API_KEY', '442779984419371'), 
+  api_secret = os.environ.get('CLOUD_API_SECRET', 'GwDhHZKQpv6ad9BQB1Bt-zpy_qI') 
 )
